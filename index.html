@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!-- Chapter 43-48 -->
+
+  1) <input type="button" value="Click me" onclick="alert('Thanks... I feel much better now!')">
+
+  2) <img src = "1.jpg" onClick = "car()" >
+
+
+  3) <table id="myTable">
+        <tr>
+          <td>Index </td>
+          <td>Name</td>
+          <td>Class</td>
+          <td></td>
+        </tr>
+        <tr id = "row">
+          <td>0</td>
+          <td>Ahmed</td>
+          <td>9</td>
+           <td> <button onclick="myFunction(this)">Delete</button></td>
+        </tr>
+        <tr id = "row">
+            <td>1</td>
+            <td>Anis</td>
+            <td>9</td>
+            <td> <button onclick="myFunction(this)">Delete</button></td>
+          </tr>
+          <tr id = "row">
+            <td>2</td>
+            <td>Saad</td>
+            <td>9</td>
+             <td> <button onclick="myFunction(this)">Delete</button></td>
+          </tr>
+          <tr id = "row">
+            <td>3</td>
+            <td>Azka</td>
+            <td>9</td>
+             <td> <button onclick="myFunction(this)">Delete</button></td>
+          </tr>
+      </table>
+      <br> 
+
+  4) <a href="#" id="name">
+        <img title="Hello" src="1.jpg" onmouseover="this.src='2.jpg'" onmouseout="this.src='1.jpg'" />
+    </a>
+
+
+
+   5) <button onclick="increment()">Increase</button>
+<input type="text" id="inc" value="0"></input><button onclick="decrement()">Decrease</button> 
+
+  <!--Chapter 49-52-->
+
+  1)<h1><u>SIGNUP FORM</u></h1>
+  <label for="FIRST NAME"><b>FIRST NAME:</b></label>
+  &emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&ensp;<input required id="FIRST NAME" type="text" name="FIRST NAME"
+    size="15" maxlength="30" placeholder="Enter Your Name" /> <br><br>
+
+
+
+  <label for="LAST NAME"><b>LAST NAME:</b></label>
+  &emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&ensp;<input required id="LAST NAME" type="text" name="LAST NAME" size="15"
+    maxlength="30" placeholder="Enter Your Last Name" /><br><br>
+
+  <label for="birthday"><b>BIRTHDAY:</b></label>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<input type="date" id="birthday" name="birthday">
+  <br><br>
+
+  <label for="EMAIL ID" required><b>EMAIL ID:</b></label>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<input required id="EMAIL ID" type="email" name="EMAIL ID"
+    size="15" maxlength="100" placeholder="Enter email address" required /><br><br>
+
+  <label for="MOBILE NUMBER"><b>MOBILE NUMBER:</b></label>
+  &emsp;&emsp;&emsp;&emsp;&ensp;<input required id="MOBILE NUMBER" type="number" name="MOBILE NUMBER" size="20"
+    placeholder="Enter mobile number" /><br><br>
+
+  <label for="PASSWORD"><b>PASSWORD: </b></label>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<input type="PASSWORD" placeholder="Enter Password" name="PASSWORD"
+    size="15" maxlength="20" required /> <br><br>
+
+
+
+  <label for="PASSWORD"><b>CONFIRM PASSWORD: </b></label>
+  &emsp;&emsp;&emsp;<input type="PASSWORD" placeholder="Enter Password" name="PASSWORD" size="15" maxlength="20"
+    required /> <br><br>
+
+
+
+
+  <div class="vertical-center">
+    <button type="submit" class="btn" onclick="Detail()">Submit</button>
+  </div>
+
+
+  3) <label for="name">Name:</label>
+  <input type="text" id="name" placeholder="Name">
+  <label for="fname">Father Name:</label>
+  <input type="text" id="fname" placeholder="Father Name">
+  <label for="class">Class:</label>
+  <input type="text" id="class" placeholder="Class">
+  <button onclick="AddDetail()">Add</button>
+  <table id="Table1">
+    <thead>
+      <tr>
+        <th>Select</th>
+        <th>Edit</th>
+        <th>Name</th>
+        <th>Father Name</th>
+        <th>Class</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr name="row">
+        <td><input type="checkbox" name="record"></td>
+        <td><input type="checkbox" name="Edit" onclick="EditFocus()"></td>
+        <td>Peter Parker</td>
+        <td>Parker</td>
+        <td>VI</td>
+      </tr>
+    </tbody>
+  </table>
+  <button onclick="Delete()">Delete</button>
+  <button onclick="Edit()">Edit</button>
+
+
+  <!-- Chapter 52-57 -->
+
+  1) <div id="modal" class="modal">
+  <span class="close" id="modal-close" onclick="onClosedImagModal()">&times;</span>
+  <img class="modal-content" id="modal-img" id="players-container" class="modal-open "
+   class="modal-close" onclick="myFunction()">
+</div>
+
+<div id="players-container" class="modal-open " class="modal-close" onclick="myFunction()"> 
+</div>
+
+2) <p>This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time!</p>
+
+<button onclick="myFunction()">Try it</button>
+<button onclick="myFunction1()">Try it1</button>
+
+<p id="demo"></p>
+
+
+
+  <!-- Chapter 58-67 -->
+
+  <div>
+    <h1> DOM </h1>
+    <div id="form-content" class="content">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" />
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" />
+      <label for="email">Email</label>
+      <input type="text" id="email" />
+    </div>
+
+    <div id="main-content" class=”content”>
+      <p class="render" id="firstName"> First Name : Alex</p>
+      <p class="render" id="lastName">Last Name: Bank</p>
+      <p class="render" id="email1"> Email : alexbank@example.com</p>
+      <p class="render"> Country : Pakistan </p>
+      <p class="render"> contact : +92 300 1234567</p>
+    </div>
+  </div>
+
+
+  iv) <button onclick="firstName()">first-name</button>
+
+  v) <button onclick="lastName()">last-name</button>
+  <button onclick="email()">email</button>
+  
+
+   <button onclick="formContent()">Node</button>
+
+   <p id="node"></p>
+
+   <button onclick="lastName()">Node1</button>
+
+   <p id="node2"></p>
+   <button onclick="lastName()">Node2</button>
+   <p id="node3"></p>
+   <p id="node4"></p>
+   <p id="node5"></p>
+
+   <button onclick="fChild()">child</button>
+   <p id="demo"></p>
+   <button onclick="lChild()">child</button>
+   <p id="demo1"></p>
+   <button onclick="sibling1()">sibling</button>
+   <p id="demo2"></p>
+   <button onclick="sibling2()">sibling</button>
+   <p id="demo3"></p>
+   <button onclick="pNode()">pNode</button>
+   <p id="demo4"></p>
+   <button onclick="nodeType()">nodeType</button>
+   <p id="demo5"></p>
+
+  <script src="app.js"></script>
+  <script src="app2.js"></script>
+  <script src="jquery-1.12.4.min.js"></script>
+</body>
+
+</html>
